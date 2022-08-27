@@ -5,7 +5,7 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
-
+import WebSocket from '@/views/democracy/websocket/websocket'
 /**
  * Note: 路由配置项
  *
