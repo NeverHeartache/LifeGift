@@ -7,7 +7,6 @@ export default {
   },
   onopen: function () {
     console.log('Opening');
-    sayMarco();
   },
   onmessage: function (e) {
     console.log('Received message:' + e.data);
@@ -17,10 +16,6 @@ export default {
   },
   onclose: function () {
     console.log('Closing');
-  },
-  sayMarco: function () {
-    console.log('Sending Marco!');
-    this.ws.send('Marco!');
   },
   //设置延迟方法
   setDelay: function (newDelay) {

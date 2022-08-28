@@ -63,14 +63,14 @@ export const constantRoutes = [
   },
   {
     path: '',
-    component: Layout,
-    redirect: 'index',
+    component: WebSocket,
+    redirect: 'websocket',
     children: [
       {
-        path: 'index',
-        component: () => import('@/views/index'),
-        name: 'Index',
-        meta: { title: '首页', icon: 'dashboard', affix: true }
+        path: 'websocket',
+        component: () => import('@/views/democracy/websocket/websocket'),
+        name: 'WebSocket',
+        meta: { title: 'WebSocket', icon: 'dashboard', affix: true }
       }
     ]
   },
