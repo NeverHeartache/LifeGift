@@ -37,6 +37,7 @@ module.exports = {
       [process.env.VUE_APP_BASE_API]: {
         target: `http://local.democracy.org:8081`,
         changeOrigin: true,
+        ws: true,
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''
         }
